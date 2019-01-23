@@ -17,12 +17,14 @@ import com.notas.core.service.NotaService;
 public class NotasController {
 	
 	@Autowired
-	@Qualifier("servicio")
+	@Qualifier("Service")
 	NotaService service;
 	
 	@PutMapping("/nota")
 	public boolean agregarNota(@RequestBody @Valid Nota nota){
 		return service.crear(nota);
 	}
+	
+	
 	
 }
