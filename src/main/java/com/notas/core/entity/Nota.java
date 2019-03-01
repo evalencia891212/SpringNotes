@@ -12,7 +12,6 @@ import javax.persistence.Table;
 @Entity
 public class Nota implements Serializable {
 	
-	
 
 	public Nota(long id, String nombre, String titulo, String contenido) {
 		super();
